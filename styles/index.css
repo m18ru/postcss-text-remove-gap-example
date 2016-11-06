@@ -1,0 +1,157 @@
+body
+{
+	margin: 0;
+	
+	font: 16px/1.3 "Open Sans", sans-serif;
+}
+
+article.card
+{
+	width: 320px;
+	
+	margin: 0 0 32px 0;
+	
+	background: #E2E4E9
+}
+
+article.card > div.photo
+{
+	height: 180px;
+	background: black;
+}
+
+article.card > div.info
+{
+	padding: 16px 16px 16px 16px;
+}
+
+article.card > div.info > small.type
+{
+	display: block;
+	margin: 0 0 8px 0;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #919AAE;
+}
+
+article.card > div.info > small.type::before
+{
+	display: table;
+	content: "";
+	margin-bottom: -0.17em;
+}
+
+article.card > div.info > small.type::after
+{
+	display: table;
+	content: "";
+	margin-top: -0.11em;
+}
+
+article.card > div.info > h2
+{
+	margin: 0 0 16px 0;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.3;
+	color: #21242C;
+}
+
+article.card > div.info > h2::before
+{
+	display: table;
+	content: "";
+	margin-bottom: -0.32em;
+}
+
+article.card > div.info > h2::after
+{
+	display: table;
+	content: "";
+	margin-top: -0.26em;
+}
+
+article.card > div.info > p
+{
+	margin: 0 0 16px 0;
+	font-size: 16px;
+	line-height: 1.3;
+	color: #919AAE;
+}
+
+article.card > div.info > p::before
+{
+	display: table;
+	content: "";
+	margin-bottom: -0.32em;
+}
+
+article.card > div.info > p::after
+{
+	display: table;
+	content: "";
+	margin-top: -0.26em;
+}
+
+article.card > div.info > ul.tags
+{
+	padding: 0;
+	/*margin: $space-stack-m;*/
+	margin: 0 0 8px 0;
+	list-style: none;
+}
+
+article.card > div.info > ul.tags > li
+{
+	display: inline-block;
+	padding: 8px 8px 8px 8px;
+	margin: 0 8px 8px 0;
+	font-size: 16px;
+	line-height: 1;
+	color: #21242C;
+	background: #C4C9D4;
+	border-radius: 3px;
+}
+
+article.card > div.info > ul.tags > li::before
+{
+	display: table;
+	content: "";
+	margin-bottom: -0.17em;
+}
+
+article.card > div.info > ul.tags > li::after
+{
+	display: table;
+	content: "";
+	margin-top: -0.11em;
+}
+
+article.card > div.info > a.view
+{
+	display: inline-block;
+	padding: 16px 32px 16px 32px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+	text-decoration: none;
+	color: white;
+	background: #2D68A0;
+	border-radius: 3px;
+}
+
+article.card > div.info > a.view::before
+{
+	display: table;
+	content: "";
+	margin-bottom: -0.17em;
+}
+
+article.card > div.info > a.view::after
+{
+	display: table;
+	content: "";
+	margin-top: -0.11em;
+}

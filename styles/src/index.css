@@ -1,0 +1,153 @@
+$space-xxs: 2px;
+$space-xs: 4px;
+$space-s: 8px;
+$space-m: 16px;
+$space-l: 32px;
+$space-xl: 64px;
+$space-default: $space-m;
+
+$space-stack-xxs: 0 0 $space-xxs 0;
+$space-stack-xs: 0 0 $space-xs 0;
+$space-stack-s: 0 0 $space-s 0;
+$space-stack-m: 0 0 $space-m 0;
+$space-stack-l: 0 0 $space-l 0;
+$space-stack-xl: 0 0 $space-xl 0;
+$space-stack-default: $space-stack-m;
+
+$space-inline-xxs: 0 $space-xxs 0 0;
+$space-inline-xs: 0 $space-xs 0 0;
+$space-inline-s: 0 $space-s 0 0;
+$space-inline-m: 0 $space-m 0 0;
+$space-inline-l: 0 $space-l 0 0;
+$space-inline-xl: 0 $space-xl 0 0;
+$space-inline-default: $space-inline-m;
+
+$space-inset-xs: $space-xs $space-xs $space-xs $space-xs;
+$space-inset-s: $space-s $space-s $space-s $space-s;
+$space-inset-m: $space-m $space-m $space-m $space-m;
+$space-inset-l: $space-l $space-l $space-l $space-l;
+$space-inset-xl: $space-xl $space-xl $space-xl $space-xl;
+$space-inset-default: $space-inset-m;
+
+$space-inset-squish-s: $space-xs $space-s $space-xs $space-s;
+$space-inset-squish-m: $space-s $space-m $space-s $space-m;
+$space-inset-squish-l: $space-m $space-l $space-m $space-l;
+
+$space-inset-stretch-s: calc($space-m - $space-xs) $space-s calc($space-m - $space-xs) $space-s;
+$space-inset-stretch-m: calc($space-l - $space-s) $space-m calc($space-l - $space-s) $space-m;
+
+$clr-card: #E2E4E9;
+$clr-title: #21242C;
+$clr-text: #919AAE;
+$clr-tags: #C4C9D4;
+$clr-button: #2D68A0;
+
+body
+{
+	margin: 0;
+	
+	font: 16px/1.3 "Open Sans", sans-serif;
+}
+
+article.card
+{
+	width: 320px;
+	
+	margin: $space-stack-l;
+	
+	background: $clr-card;
+	
+	& > div.photo
+	{
+		height: 180px;
+		
+		background: black;
+	}
+	
+	& > div.info
+	{
+		padding: $space-inset-m;
+		
+		& > small.type
+		{
+			display: block;
+			
+			margin: $space-stack-s;
+			
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1;
+			text-transform: uppercase;
+			-m18-text-remove-gap: both;
+			
+			color: $clr-text;
+		}
+		
+		& > h2
+		{
+			margin: $space-stack-m;
+			
+			font-size: 24px;
+			font-weight: 600;
+			line-height: 1.3;
+			-m18-text-remove-gap: both;
+			
+			color: $clr-title;
+		}
+		
+		& > p
+		{
+			margin: $space-stack-m;
+			
+			font-size: 16px;
+			line-height: 1.3;
+			-m18-text-remove-gap: both;
+			
+			color: $clr-text;
+		}
+		
+		& > ul.tags
+		{
+			padding: 0;
+			/*margin: $space-stack-m;*/
+			margin: 0 0 calc($space-m - $space-s) 0;
+			
+			list-style: none;
+			
+			& > li
+			{
+				display: inline-block;
+				
+				padding: $space-inset-s;
+				margin: 0 $space-s $space-s 0;
+				
+				font-size: 16px;
+				line-height: 1;
+				-m18-text-remove-gap: both;
+				
+				color: $clr-title;
+				background: $clr-tags;
+				
+				border-radius: 3px;
+			}
+		}
+		
+		& > a.view
+		{
+			display: inline-block;
+			
+			padding: $space-inset-squish-l;
+			
+			font-size: 16px;
+			font-weight: 600;
+			line-height: 1;
+			text-decoration: none;
+			-m18-text-remove-gap: both;
+			
+			color: white;
+			background: $clr-button;
+			
+			border-radius: 3px;
+		}
+	}
+}

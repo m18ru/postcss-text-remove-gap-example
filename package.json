@@ -1,0 +1,34 @@
+{
+  "name": "postcss-text-remove-gap-example",
+  "version": "1.0.0",
+  "description": "An example of using the postcss-remove-gap plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m18ru/postcss-text-remove-gap-example.git"
+  },
+  "keywords": [
+    "postcss-text-remove-gap",
+    "Space",
+    "in",
+    "Design",
+    "Systems"
+  ],
+  "author": "Andrey Avol Volynkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m18ru/postcss-text-remove-gap-example/issues"
+  },
+  "homepage": "https://github.com/m18ru/postcss-text-remove-gap-example#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.2.0",
+    "postcss-advanced-variables": "^1.2.2",
+    "postcss-calc": "^5.3.1",
+    "postcss-nesting": "^2.3.1",
+    "postcss-text-remove-gap": "^1.1.1"
+  }
+}
